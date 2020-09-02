@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FirstGame</string>
+<!--    <string name="_2">2</string>-->
+<!--    <string name="_2">2</string>-->
+    <string name="part_a">part a value = %1$d.</string>
+    <string name="part_b">part b value = %1$d.</string>
 </resources>

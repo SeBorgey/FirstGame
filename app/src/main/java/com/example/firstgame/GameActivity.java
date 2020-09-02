@@ -2,6 +2,7 @@ package com.example.firstgame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -42,7 +43,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         buttonObjectChoice1.setOnClickListener(this);
         buttonObjectChoice2.setOnClickListener(this);
         buttonObjectChoice3.setOnClickListener(this);
-
         setQuestion();
     }//onCreate
 
@@ -85,8 +85,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         correctAnswer = partA * partB;
         int wrongAnswer1 = correctAnswer-2;
         int wrongAnswer2 = correctAnswer+2;
-        textObjectPartA.setText(""+partA);
-        textObjectPartB.setText(""+partB);
+        Resources res = getResources();
+        String partA_text = String.format(res.getString(R.string.part_a), partA);
+        textObjectPartA.setText(partA_text);
+        String partB_text = String.format(res.getString(R.string.part_b), partB);
+        textObjectPartB.setText(partB_text);
         //устанавливаем числа в кнопки
         //генерируем случайное число между 0 и 2
         int buttonLayout = randInt.nextInt(3);
