@@ -32,8 +32,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         /*Здесь мы создаём объект, основанный на классе
         TextView и Button соответственно, а также связываем эти объекты
         к соответствующим элементам графического интерфейса, созданного нами ранее*/
-        TextView textObjectPartA = (TextView)findViewById(R.id.textPartA);
-        TextView textObjectPartB = (TextView)findViewById(R.id.textPartB);
+        textObjectPartA = (TextView)findViewById(R.id.textPartA);
+        textObjectPartB = (TextView)findViewById(R.id.textPartB);
         textObjectScore = (TextView)findViewById(R.id.textScore);
         textObjectLevel = (TextView)findViewById(R.id.textLevel);
         buttonObjectChoice1 =(Button)findViewById(R.id.buttonChoice1);
