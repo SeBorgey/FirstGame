@@ -85,8 +85,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         correctAnswer = partA * partB;
         int wrongAnswer1 = correctAnswer-2;
         int wrongAnswer2 = correctAnswer+2;
-        textObjectPartA.setText(""+partA);
-        textObjectPartB.setText(""+partB);
+        textObjectPartA.setText(String.valueOf(partA));
+        textObjectPartB.setText(String.valueOf(partB));
         //устанавливаем числа в кнопки
         //генерируем случайное число между 0 и 2
         int buttonLayout = randInt.nextInt(3);
